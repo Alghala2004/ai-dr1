@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teachable Machine Image Model</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teachable Machine Image Model</h1>
+        <button type="button" onclick="init()">Start</button>
+        <input type="file" id="image" onchange="handleImageUpload(event)">
+        <div class="webcam-container" id="webcam-container">
+            <!-- The webcam container (hidden as we're not using it anymore) -->
+        </div>
+        <div class="image-preview-container">
+            <img id="imagePreview" src="" alt="Uploaded Image">
+        </div>
+        <div class="label-container" id="label-container"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
